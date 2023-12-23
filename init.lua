@@ -1,7 +1,7 @@
 for _, source in ipairs {
     "settings.options",
-    "utils.lazy",
     "utils.autocmds",
+    "utils.lazy",
 } 
 do local status_ok, fault = pcall(require, source)
     if not status_ok then 
@@ -9,7 +9,7 @@ do local status_ok, fault = pcall(require, source)
     end
 end
 
-local default_colorscheme = "melange"
+local default_colorscheme = "tokyodark"
 
 if default_colorscheme then
   if not pcall(vim.cmd.colorscheme, default_colorscheme) then
