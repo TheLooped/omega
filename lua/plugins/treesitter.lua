@@ -4,7 +4,9 @@ return {
 		"windwp/nvim-ts-autotag",
 		"nvim-treesitter/nvim-treesitter-textobjects",
 		"JoosepAlviste/nvim-ts-context-commentstring",
-		"Wansmer/treesj",
+		{ "Wansmer/treesj", opts = {
+			use_default_keymaps = true,
+		} },
 	},
 	event = "User BaseFile",
 	cmd = {

@@ -1,5 +1,6 @@
 for _, source in ipairs({
 	"settings.options",
+	"settings.keymaps",
 	"utils.autocmds",
 	"utils.lazy",
 }) do
