@@ -30,6 +30,7 @@
   "muren.nvim": { "branch": "main", "commit": "818c09097dba1322b2ca099e35f7471feccfef93" },
   "neodev.nvim": { "branch": "main", "commit": "0afdcb703f265c3079a47857bda01e3ccf884558" },
   "noice.nvim": { "branch": "main", "commit": "92433164e2f7118d4122c7674c3834d9511722ba" },
+  "nougat.nvim": { "branch": "main", "commit": "6024f7558fe4759ce81723fd770a6abe5ceb7010" },
   "nui.nvim": { "branch": "main", "commit": "c9b4de623d19a85b353ff70d2ae9c77143abe69c" },
   "numb.nvim": { "branch": "master", "commit": "3f7d4a74bd456e747a1278ea1672b26116e0824d" },
   "nvim-cmp": { "branch": "main", "commit": "538e37ba87284942c1d76ed38dd497e54e65b891" },
