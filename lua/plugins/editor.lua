@@ -150,6 +150,20 @@ local editor = {
 		end,
 	},
 	{
+		"cbochs/grapple.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		cmd = {
+			"GrappleCycle",
+			"GrapplePopup",
+			"GrappleSelect",
+			"GrappleReset",
+			"GrappleTag",
+			"GrappleTags",
+			"GrappleToggle",
+			"GrappleUnTag",
+		},
+	},
+	{
 		"lewis6991/gitsigns.nvim",
 		event = "User BaseGitFile",
 		enabled = vim.fn.executable("git") == 1,

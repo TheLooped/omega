@@ -245,8 +245,6 @@ local ui = {
 					},
 				},
 
-				-- Disable every other noice feature
-				messages = { enabled = false },
 				lsp = {
 					hover = { enabled = false },
 					signature = { enabled = false },

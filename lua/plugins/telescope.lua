@@ -20,9 +20,16 @@ return {
 				["<ESC>"] = actions.close,
 				["<C-c>"] = false,
 			},
-			n = { ["q"] = actions.close },
+			n = {
+				["q"] = actions.close,
+			},
 		}
 		return {
+			pickers = {
+				find_files = {
+					theme = "dropdown",
+				},
+			},
 			defaults = {
 				prompt_prefix = "❯",
 				selection_caret = "❯",
@@ -48,8 +55,8 @@ return {
 		local utils = require("utils.helper")
 		local telescope = require("telescope")
 		telescope.setup(opts)
-		utils.conditional_func(telescope.load_extension, utils.is_available("nvim-notify"), "notify")
-		utils.conditional_func(telescope.load_extension, utils.is_available("telescope-fzf-native.nvim"), "fzf")
-		utils.conditional_func(telescope.load_extension, utils.is_available("LuaSnip"), "luasnip")
+		utils.conditional_func(telescope.load_extension, utils.has("nvim-notify"), "notify")
+		utils.conditional_func(telescope.load_extension, utils.has("telescope-fzf-native.nvim"), "fzf")
+		utils.conditional_func(telescope.load_extension, utils.has("LuaSnip"), "luasnip")
 	end,
 }
